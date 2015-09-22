@@ -11,6 +11,8 @@ window.prepareDependsOn = ->
         when 'checkbox' then depend_type = 'checked'
         when 'text', 'number', 'select' then depend_type = 'values'
     value =  $(element).data('value')
+    if depend_type == 'match'
+      value = RegExp(value)
     object = {}
     object[field_to_check] = {
       "#{depend_type}": value

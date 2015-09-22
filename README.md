@@ -65,6 +65,12 @@ Include the assets in your javascript manifest file:
     = f.input 'another_field'
   ```
 
+  ```haml
+   = f.input 'a_text_field'
+  .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'match', 'data-value' => '\da{3}'}
+    = f.input 'another_field'
+  ```
+
 ## TODO
 
   * Multiple dependencies
