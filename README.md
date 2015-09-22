@@ -1,5 +1,7 @@
 # RailsDependsOn
 
+[![Gem Version](https://badge.fury.io/rb/rails_depends_on.svg)](http://badge.fury.io/rb/rails_depends_on)
+
 A simple rails engine to make it easier to use the great DependsOn jQuery Plugin:
 
 http://dstreet.github.io/dependsOn/
