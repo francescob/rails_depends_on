@@ -26,8 +26,9 @@ Or install it yourself as:
     $ gem install rails_depends_on
 
 Include the assets in your javascript manifest file:
-      $ //= require dependent-fields to your Javascript manifest file (usually found at app/assets/javascripts/application.js).
-
+   
+    //= require dependent-fields to your Javascript manifest file (usually found at app/assets/javascripts/application.js).
+    
 
 ## Usage
 
