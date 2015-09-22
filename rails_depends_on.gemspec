@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["francescob@gmail.com"]
 
   spec.summary       = "A jQuery plugin to facilitate the handling of form field dependencies."
-  spec.homepage      = "http://Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/francescob/rails_depends_on"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

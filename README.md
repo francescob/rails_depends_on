@@ -41,13 +41,34 @@ Include the assets in your javascript manifest file:
     = f.input 'another_field'
   ```
 
+  ```haml
+   = f.input 'a_text_field'
+  .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'not', 'data-value' =>[['1'],['2']]}
+    = f.input 'another_field'
+  ```
+
+  ```haml
+   = f.input 'a_multiple_select'
+  .depends-on{"data-id" => 'a_multiple_select', 'data-qualifier'=> 'contains', 'data-value' =>[['1'],['2']]}
+    = f.input 'another_field'
+  ```
+
+  ```haml
+   = f.input 'a_text_field'
+  .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'email', 'data-value' => 'true'}
+    = f.input 'another_field'
+  ```
+
+  ```haml
+   = f.input 'a_text_field'
+  .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'url', 'data-value' => 'true'}
+    = f.input 'another_field'
+  ```
+
 ## TODO
 
   * Multiple dependencies
-  * *NOT* qualifier
-  * *Contains* qualifier
   * *Regexp* qualifier
-  * *url* and *email* qualifier
   * *Custom* Qualifiers
   * implement all dependsOn options (callbacks etc..)
 
