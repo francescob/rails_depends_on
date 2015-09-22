@@ -40,19 +40,19 @@ Include the assets in your javascript manifest file (usually found at app/assets
 
   ```haml
    = f.input 'a_text_field'
-  .depends-on{"data-id" => 'a_text_field', 'data-value' =>[['1'],['2']]}
+  .depends-on{"data-id" => 'a_text_field', 'data-value' =>['1','2']}
     = f.input 'another_field'
   ```
 
   ```haml
    = f.input 'a_text_field'
-  .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'not', 'data-value' =>[['1'],['2']]}
+  .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'not', 'data-value' =>['1','2']}
     = f.input 'another_field'
   ```
 
   ```haml
    = f.input 'a_multiple_select'
-  .depends-on{"data-id" => 'a_multiple_select', 'data-qualifier'=> 'contains', 'data-value' =>[['1'],['2']]}
+  .depends-on{"data-id" => 'a_multiple_select', 'data-qualifier'=> 'contains', 'data-value' =>['1','2']}
     = f.input 'another_field'
   ```
 
