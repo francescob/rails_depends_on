@@ -77,7 +77,6 @@ Include the assets in your javascript manifest file (usually found at app/assets
 ## TODO
 
   * Multiple dependencies
-  * *Regexp* qualifier
   * *Custom* Qualifiers
   * implement all dependsOn options (callbacks etc..)
 
