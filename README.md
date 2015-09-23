@@ -26,9 +26,9 @@ Or install it yourself as:
     $ gem install rails_depends_on
 
 Include the assets in your javascript manifest file:
-   
+
     //= require dependent-fields to your Javascript manifest file (usually found at app/assets/javascripts/application.js).
-    
+
 
 ## Usage
 
@@ -71,6 +71,12 @@ Include the assets in your javascript manifest file:
   ```haml
    = f.input 'a_text_field'
   .depends-on{"data-id" => 'a_text_field', 'data-qualifier'=> 'match', 'data-value' => '\da{3}'}
+    = f.input 'another_field'
+  ```
+
+  ```haml
+   = f.input 'a_radio_buttone'
+  .depends-on{"data-name" => 'a_radio_button', 'data-qualifier'=> 'match', 'data-value' => ['1','2']}
     = f.input 'another_field'
   ```
 
