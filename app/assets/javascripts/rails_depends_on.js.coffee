@@ -1,5 +1,5 @@
 //= require dependsOn
-window.prepareDependsOn = ->
+$(document).on 'turbolinks:load', ->
   for element in $('.depends-on')
 
     if $(element).data('name')
